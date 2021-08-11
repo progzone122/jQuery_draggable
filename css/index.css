@@ -1,0 +1,68 @@
+html,body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+#draggable{
+  font-size: x-large;
+  border: thin solid black;
+  height: 70vh;
+  width: 28%;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+#draggable p, #draggable h3{
+  color: white;
+  margin: 0.2em;
+}
+#draggable h3{
+  margin-top: 0.4em;
+}
+.draggable-image{
+  width: 90%;
+  height: 70%;
+  margin-top: 1.3em;
+  background-color: white;
+}
+.no_block{
+  height: 100%;
+  width: 35%;
+  background-color: red;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yes_block{
+  height: 100%;
+  width: 35%;
+  background-color: green;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no_block, .yes_block h2{
+  color: white;
+}
+@media screen and (max-width : 1000px) {
+  #draggable{
+    width: 56%;
+    height: 50vh;
+    margin: 0;
+  }
+  .no_block, .yes_block{
+    width: 30%;
+  }
+}
